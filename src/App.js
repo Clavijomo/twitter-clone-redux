@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes} from "react-router-dom"
+import Aside from "./components/Aside";
+import Trends from "./components/Trends";
+import CreateTweet from "./pages/CreateTweet";
+import ListTweets from "./pages/ListTweets";
+import Tweets from './pages/Tweets';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="flex w-6/12 mx-auto h-screen gap-3">            
+      <Router>
+        <Aside />
+        <Routes>
+          <Route path="/" element={<Tweets />} />
+          <Route path="/listTweets" element={<ListTweets/>}/>
+          <Route path="/create" element={<CreateTweet/>} />
+        </Routes>
+      </Router>
+      <Trends />
+    </div>    
   );
 }
 
