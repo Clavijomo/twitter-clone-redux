@@ -5,17 +5,23 @@ import CreateTweet from "./pages/CreateTweet";
 import ListTweets from "./pages/ListTweets";
 import Tweets from './pages/Tweets';
 
+// Redux
+import {Provider} from "react-redux";
+import store from "./store";
+
 function App() {
 
   return (
-    <div className="flex w-6/12 mx-auto h-screen gap-3">            
+    <div className="flex w-8/12 mx-auto h-screen gap-3">            
       <Router>
-        <Aside />
-        <Routes>
-          <Route path="/" element={<Tweets />} />
-          <Route path="/listTweets" element={<ListTweets/>}/>
-          <Route path="/create" element={<CreateTweet/>} />
-        </Routes>
+        <Provider store={store}>
+          <Aside />
+          <Routes>
+            <Route path="/" element={<Tweets />} />
+            <Route path="/listTweets" element={<ListTweets/>}/>
+            <Route path="/create" element={<CreateTweet/>} />
+          </Routes>
+        </Provider>
       </Router>
       <Trends />
     </div>    

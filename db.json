@@ -1,0 +1,22 @@
+{
+  "tweets": [
+    {
+      "nombre": "morales",
+      "usuario": "@morales123",
+      "tweet": "Tailwind CSS works by scanning all of your HTML files, JavaScript components, and any other templates for class names, generating the corresponding styles and then writing them to a static CSS file.",
+      "id": 2
+    },
+    {
+      "nombre": "Spotify Premium",
+      "usuario": "@ladinoPrado",
+      "tweet": "Tailwind CSS works by scanning all of your HTML files, JavaScript components, and any other templates for class names, generating the corresponding styles and then writing them to a static CSS file.",
+      "id": 3
+    },
+    {
+      "nombre": "Cristian",
+      "usuario": "@andre123",
+      "tweet": "Tailwind CSS works by scanning all of your HTML files, JavaScript components, and any other templates for class names, generating the corresponding styles and then writing them to a static CSS file.",
+      "id": 5
+    }
+  ]
+}

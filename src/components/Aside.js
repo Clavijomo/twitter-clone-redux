@@ -6,7 +6,7 @@ const Aside = () => {
   const location = useLocation();
 
   return (
-    <div className="h-full md:w-1/5 py-5">      
+    <div className="h-full md:w-1/3 py-5">      
       <Link 
         to={'/listTweets'}
         className={`${location.pathname === '/listTweets' ? 'font-semibold' : 'font-normal'} px-5 py-3 hover:bg-zinc-200 w-max block transition rounded-full text-xl`}
@@ -20,7 +20,7 @@ const Aside = () => {
       </Link>
       <Link
         to={'/create'}
-        className={`${location.pathname === '/create' ? 'font-semibold' : 'font-normal'} bg-blue-400 block rounded-full text-center p-3 text-white mt-10 hover:bg-blue-500 transition`}
+        className={`${location.pathname === '/create' ? 'font-semibold' : 'font-normal'} bg-blue-400 block rounded-full w-max text-center py-3 px-10 text-white mt-5 hover:bg-blue-500 transition`}
       >
         Twittear
       </Link> 
